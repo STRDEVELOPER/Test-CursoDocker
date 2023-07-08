@@ -1,0 +1,9 @@
+on: push
+name: deploy		
+		jobs:
+			deploy:
+				name: deploy de prueba
+				runs-on: ubuntu-latest
+				steps:
+          - run: echo “ejecutando Workflow”
+          - uses: actions/checkout@v2
